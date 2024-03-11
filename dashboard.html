@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Organisation | Dashboard</title>
+    <link rel="stylesheet" href="dstyle.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                    <i class="fas fa-user-cog"></i>
+                        <span class="nav-item"></span>
+                    </a></li>
+                <li class="active"><a href="#">
+                        <i class="fas fa-menorah"></i>
+                        <span class="nav-item">Dashboard</span>
+                    </a></li>
+                <li><a href="chat.html">
+                        <i class="fas fa-comment"></i>
+                        <span class="nav-item">Chat</span>
+                    </a></li>
+                <li><a href="orghack.html">
+                    <i class="fas fa-plus"></i>
+                        <span class="nav-item">Organize Event</span>
+                    </a></li>
+                <li><a href="myevents.html">
+                    <i class="fas fa-check"></i>
+                        <span class="nav-item">My Events</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span class="nav-item">Setting</span>
+                    </a></li>
+                <li><a href="index.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="nav-item">Log out</span>
+                    </a></li>
+            </ul>
+        </nav>
+        <section class="main">
+            <div class="main-top">
+                <h1 style="display: inline;">Sponser List</h1>
+                <div>
+                    <i style="z-index: 4;" class="fas fa-user-cog" "></i>
+                    <a style="position: absolute;width:15px;right: 5%;" href="index.html"><h2 style="transform:translate-y(-55%);">Home</h2></a>
+                </div>
+                
+            </div>
+            <div class="users">
+                <div class="card">
+                    <img src="https://play-lh.googleusercontent.com/ZI21NMObsjB7DbPU_EXRymHJL3HQpfsrB2N4CWb-diXm4xjl_13mmetYQZvcpgGf-64">
+                    <h4>GeeksforGeeks</h4>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td>Event: </td>
+                                <td>Newbiethon</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.yGvkMVq8HeK5BnYQCTWEdgHaFj&pid=Api&P=0&h=180">
+                    <h4>Polygon</h4>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td>Event: </td>
+                                <td>Hackfest</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.4wjFlQDW2OaI4CM1C23dWgHaFG&pid=Api&P=0&h=180">
+                    <h4>ETH</h4>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td>Event: </td>
+                                <td>Vega</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.Z4o9htajpxoOZDyLW-LKuQHaHa&pid=Api&P=0&h=180" alt="">
+                    <h4>PW</h4>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td>Event: </td>
+                                <td>xyz</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+            </div>
+            <section class="attendance">
+                <div class="attendance-list">
+                    <h1>Payment Log</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Gateway</th>
+                                <th>Date</th>
+                                <th>Payment Time</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>GeeksforGeeks</td>
+                                <td>RazorPay</td>
+                                <td>03-24-22</td>
+                                <td>8:00AM</td>
+                                <td>$1200</td>
+                                
+                            </tr>
+                            <tr class="active">
+                                <td>02</td>
+                                <td>Polygon</td>
+                                <td>PayPal</td>
+                                <td>03-24-22</td>
+                                <td>9:00AM</td>
+                                <td>$2000</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>ETH</td>
+                                <td>UPI</td>
+                                <td>03-24-22</td>
+                                <td>8:00AM</td>
+                                <td>$1000</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>PW</td>
+                                <td>Bank Tr</td>
+                                <td>03-24-22</td>
+                                <td>8:00AM</td>
+                                <td>$300</td>
+                                
+                            </tr>
+                            <!-- <tr >
+                <td>05</td>
+                <td>Salina</td>
+                <td>Coding</td>
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr >
+                <td>06</td>
+                <td>Tara Smith</td>
+                <td>Testing</td>
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+                <td><button>View</button></td>
+              </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>

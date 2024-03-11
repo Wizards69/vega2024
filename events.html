@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <link rel="stylesheet" href="events.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>Event<span>elevate</span></h1></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="events.html">events</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="signin-login-text">
+            <li><a href="login.html">login</a></li>
+            <li><a href="signup.html"><span>sign up</span></a></li>
+        </div>
+    </header>
+
+    <section id="events">
+        <div class="search-column">
+            <input type="text" id="search-input" onkeyup="myFunction()" placeholder="Search with Event, College, Location...">
+            <button id="search-events">search</button>
+        </div>
+        <div class="events-container">
+            
+            <div class="card">
+                <div class="info">
+                    <h2 class="event-name">newbithon 2024</h2>
+                    <h3 class="event-college">thadomal shahani college of engineering</h3>
+                    <h3>march 20, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">mumbai,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(250, 248, 114);">
+                <div class="info">
+                    <h2 class="event-name">vega hackathon</h2>
+                    <h3 class="event-college">shah and anchor kutchhi college of engineering</h3>
+                    <h3>march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">mumbai,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(114, 230, 250);">
+                <div class="info">
+                    <h2 class="event-name">code off call 2024</h2>
+                    <h3 class="event-college">Noida College</h3>
+                    <h3>march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">delhi,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(250, 114, 234);">
+                <div class="info">
+                    <h2 class="event-name">Hackshetra 2024</h2>
+                    <h3 class="event-college">thakur college</h3>
+                    <h3>march 20, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">chennai,india</h3>
+                    <button><a href="hackshetra.html">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(114, 250, 148);">
+                <div class="info">
+                    <h2 class="event-name">devignite hackathon</h2>
+                    <h3 class="event-college">l.r. tiwari of engineering</h3>
+                    <h3>march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">gujrat,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(250, 114, 114);">
+                <div class="info">
+                    <h2 class="event-name">innov 8 2024</h2>
+                    <h3 class="event-college">terna college of engineering</h3>
+                    <h3>march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">west bengal,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(250, 114, 245);">
+                <div class="info">
+                    <h2 class="event-name">faisca</h2>
+                    <h3 class="event-college">thadomal shahani college of engineering</h3>
+                    <h3>march 20, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">mumbai,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(114, 250, 225);">
+                <div class="info">
+                    <h2 class="event-name">nach gaan hackathon</h2>
+                    <h3 class="event-college">terna college of engineering</h3>
+                    <h3>march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">mumbai,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(250, 184, 114);">
+                <div class="info">
+                    <h2 class="event-name">init hacks 2024</h2>
+                    <h3 class="event-college">manishchandra college of engineering</h3>
+                    <h3 class="event-loc">march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">goa,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(250, 114, 225);">
+                <div class="info">
+                    <h2 class="event-name">rubixs 2024</h2>
+                    <h3 class="event-college">thadomal shahani college of engineering</h3>
+                    <h3>march 20, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">andra pradesh,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(114, 250, 121);">
+                <div class="info">
+                    <h2 class="event-name">LOC 6.0 hackathon</h2>
+                    <h3 class="event-college">DJ sanghvi college of engineering</h3>
+                    <h3>march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">kerala,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+
+            </div>
+
+            <div class="card" style="border-top: .6rem solid rgb(143, 250, 114);">
+                <div class="info">
+                    <h2 class="event-name">Quasar 2024</h2>
+                    <h3 class="event-college">vasant dada college of engineering</h3>
+                    <h3>march 06, 2024</h3>
+                </div>
+
+                <div class="address">
+                    <h3 class="event-loc">tamil nadu,india</h3>
+                    <button><a href="#">view event</a></button>
+                </div>
+            </div>
+
+
+            
+    </section>
+ 
+    <script>
+        $(document).ready(function(){
+
+            $(window).scroll(function(){
+            if($(window).scrollTop() >= 20){
+                $('header').addClass('active');
+            }else{
+                $('header').removeClass('active');
+            }
+            })
+        })
+
+        
+function myFunction() {
+   var input, filter, i, txtValue,span, count=0, div, div2;
+   input = document.getElementById("search-input");
+   filter = input.value.toUpperCase();
+   div2 = document.getElementsByClassName("card");
+
+   for (i = 0; i < div2.length; i++) {
+     span = div2[i].querySelector(".event-name");
+     txtValue = span.textContent || span.innerText;
+     span2 = div2[i].querySelector(".event-college");
+     txtValue2 = span2.textContent || span2.innerText;
+     span3 = div2[i].querySelector(".event-loc");
+     txtValue3 = span3.textContent || span3.innerText;
+     
+     if (txtValue.toUpperCase().indexOf(filter) > -1  || txtValue2.toUpperCase().indexOf(filter) > -1  ||  txtValue3.toUpperCase().indexOf(filter) > -1) {
+       div2[i].style.display = "";
+     } else {
+      div2[i].style.display = "none";
+     }
+   }
+}
+
+    </script>
+</body>
+</html>

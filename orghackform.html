@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Organisation | Dashboard</title>
+    <link rel="stylesheet" href="dstyle.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap')
+
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            text-transform: uppercase;
+        }
+
+        body {
+            background: rgb(226, 226, 226);
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+
+            .container {
+                display: flex;
+                flex-flow: column;
+                text-align: left;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                label {
+                    font-size: 1.5rem;
+                }
+
+                input {
+                    width: 10rem;
+                }
+
+            }
+
+            .buttons{
+                display: flex;
+                margin-top: 40px;
+                gap: 5px;
+                justify-content: space-around;
+            }
+            .buttons button{
+                width: 80px;
+                height: 40px;
+                border: none;
+                border-radius: 10px;
+                &:hover{
+                    background: salmon;
+                    color: white;
+                }
+            }
+            a{
+                width: 103px;
+                cursor: pointer;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                        <i class="fas fa-user-cog"></i>
+                        <span class="nav-item">TSEC</span>
+                    </a></li>
+                <li"><a href="dashboard.html">
+                        <i class="fas fa-menorah"></i>
+                        <span class="nav-item">Dashboard</span>
+                    </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-comment"></i>
+                            <span class="nav-item">Message</span>
+                        </a></li>
+                    <li class="active"><a href="#">
+                            <i class="fas fa-plus"></i>
+                            <span class="nav-item">Organize Event</span>
+                        </a></li>
+                    <li><a href="myevents.html">
+                            <i class="fas fa-check"></i>
+                            <span class="nav-item">My Events</span>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span class="nav-item">Setting</span>
+                        </a></li>
+                    <li><a href="index.html" class="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item">Log out</span>
+                        </a></li>
+            </ul>
+        </nav>
+        <section class="main">
+            <div class="container" style="margin:auto;">
+                <h1>lets get started</h1>
+                <label for="#name-event">name of the event</label>
+                <input type="text" id="name-event">
+                <br>
+                <label for="#name-event">university you are representing</label>
+                <input type="text" id="name-college">
+
+                <div class="buttons">
+                    <a href="#"><button>cancel</button></a>
+                    <a href="#"><button>begin</button></a>
+                </div>
+            </div>
+
+
+        </section>
+        
+        <script>
+            document.querySelector(".openpop").addEventListener("click", () => {
+                document.querySelector(".pop").style.display = "block"
+            })
+            document.querySelector(".closepop").addEventListener("click", () => {
+                document.querySelector(".pop").style.display = "none"
+            })
+        </script>
+</body>
+
+</html>

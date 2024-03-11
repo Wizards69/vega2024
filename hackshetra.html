@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>Event<span>elevate</span></h1></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="events.html">events</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="signin-login-text">
+            <li><a href="login.html">login</a></li>
+            <li><a href="signup.html"><span>sign up</span></a></li>
+        </div>
+    </header>
+
+    <section id="events" style="width:80vw; margin:auto;">
+        <h2 style="margin-top:150px;font-size:50px;">Welcome to Hackshetra!</h2>
+        <div style="display: flex;">
+        <p style="width: 50%; font-size: 16px;margin: 30px;line-height: 32px;padding-left: 40px;">After 2 years of rusting brains and unrest🥸, it's finally time to get your laptops💻 ready because Techspardha’22 is back with Hackshetra, the annual 24- hour⏳ coding hackathon of NIT Kurukshetra🤠. Based on the theme given to you on the spot, you can select problem statements and use newly emerging technologies like Cloud Computing😶‍🌫, Blockchain👨🏻‍🔧, ML/AI🏗️, Chatbots 🤖, etc. to build project based on it. ☠️</p>
+        <div style="width:50%;">
+        <div class="container" style="width: 80%; background-color: white; box-shadow: 2px 2px 2px 2px black ;height: 100%;border-radius: 10px;;">
+            <h3 style="transform:translate(15%, 120%);font-size: 20px;">Sponser Deadline Ends in 3 Days</h3>
+            <button style="transform:translate(140%, 450%);cursor: pointer;background-color: rgb(255, 168, 159);padding: 10px;border-radius: 15%;color:white;" class="sc-fzoXzr kGUbma">Sponser Now!</button>
+        </div>
+        </div>
+        </div>
+        
+        <p style=" font-size: 18px;margin:25px;"><b style="font-size: 25px; margin-bottom: 40px;">Coordinators:</b>
+            <br>  Aayush Gupta - 7690914693
+            <br>  Nipun - 9306232064
+            <br>  Sachi - 9767955940
+            <br>  Sparsh - 9812600994</p>
+
+            
+        
+            
+    </section>
+    <section id="footer">
+
+        <div class="footer-container">
+            <div class="brand">
+                <div class="logo">
+                    <a href="#"><h1>Event<span>elevate</span></h1></a>
+                </div>
+                <div class="icons">
+                    <i href="#" class="fa-brands fa-facebook">facebook</i>
+                    <i href="#" class="fa-brands fa-instagram">instagram</i>
+                    <i href="#" class="fa-brands fa-x-twitter">twitter</i>
+                    <i href="#" class="fa-brands fa-github">github</i>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="info">
+                    <i href="#" class="fa-solid fa-location-dot">address</i>
+                    <i href="#" class="fa-solid fa-envelope">example@gmail.com</i>
+                    <i href="#" class="fa-solid fa-phone">+91 0000000000</i>
+                </div>
+            </div>
+
+            <div class="letter">
+                <h1>
+                    newsletter
+                </h1>
+                <p>submit your e-mail for latest updates</p>
+                <input type="email" placeholder="e-mail">
+                <input type="submit" placeholder="subscribe">
+            </div>
+          
+        </div>
+
+        <h1 class="msg">copyright &copy; 2024 <span>Team Wizards</span> | all right reserved</h1>
+
+    </section>
+    <script>
+        $(document).ready(function(){
+
+            $(window).scroll(function(){
+            if($(window).scrollTop() >= 20){
+                $('header').addClass('active');
+            }else{
+                $('header').removeClass('active');
+            }
+            })
+        })
+
+        
+function myFunction() {
+   var input, filter, i, txtValue,span, count=0, div, div2;
+   input = document.getElementById("search-input");
+   filter = input.value.toUpperCase();
+   div2 = document.getElementsByClassName("card");
+
+   for (i = 0; i < div2.length; i++) {
+     span = div2[i].querySelector(".event-name");
+     txtValue = span.textContent || span.innerText;
+     span2 = div2[i].querySelector(".event-college");
+     txtValue2 = span2.textContent || span2.innerText;
+     span3 = div2[i].querySelector(".event-loc");
+     txtValue3 = span3.textContent || span3.innerText;
+     
+     if (txtValue.toUpperCase().indexOf(filter) > -1  || txtValue2.toUpperCase().indexOf(filter) > -1  ||  txtValue3.toUpperCase().indexOf(filter) > -1) {
+       div2[i].style.display = "";
+     } else {
+      div2[i].style.display = "none";
+     }
+   }
+}
+
+    </script>
+</body>
+</html>
